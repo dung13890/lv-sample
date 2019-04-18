@@ -10,6 +10,5 @@
         @include('frontend.home._products')
         @include('frontend.home._howto')
         @include('frontend.home._testimonials')
-        @include('frontend.home._we')
     </main>
 @endsection
