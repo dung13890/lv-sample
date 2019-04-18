@@ -62,8 +62,6 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
             var navbar = document.getElementById("sticky");
             var sticky = navbar.offsetTop;
 
-            console.log('1: ', window.pageYOffset);
-            console.log('2: ', sticky);
             if (window.pageYOffset > sticky) {
                 navbar.classList.add("sticky")
             } else {
@@ -147,6 +145,37 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
             });
         }
 
+        function swiperGallery(el) {
+            $(el).each(function() {
+                var e = $(this);
+                var $galleryThumbs = $(this).find('.gallery-thumbs');
+                var $galleryMain = $(this).find('.gallery-top');
+
+                var galleryThumbs = new Swiper($galleryThumbs, {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    loop: true,
+                    freeMode: true,
+                    loopedSlides: 5, //looped slides should be the same
+                    watchSlidesVisibility: true,
+                    watchSlidesProgress: true,
+                });
+
+                var galleryTop = new Swiper($galleryMain, {
+                    spaceBetween: 10,
+                    loop:true,
+                    loopedSlides: 5, //looped slides should be the same
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    thumbs: {
+                        swiper: galleryThumbs,
+                    },
+                });
+            });
+        }
+
         function gallery(el) {
             $(el).lightGallery({
                 getCaptionFromTitleOrAlt: false
@@ -160,12 +189,14 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                 var sliderEl = '.swiper-block';
                 var generalSliderEl = '.swiper-general';
                 var galleryEl = '#lightgallery';
+                var swiperGalleryEl = '.swiper-gallery';
 
                 offcanvas();
                 if (elExists(scrollEl)) scrollTop(scrollEl);
                 // if (elExists(stickyEl)) sticky(stickyEl);
                 if (elExists(sliderEl)) slider(sliderEl);
                 if (elExists(generalSliderEl)) generalSlider(generalSliderEl);
+                if (elExists(swiperGalleryEl)) swiperGallery(swiperGalleryEl);
                 if (elExists(galleryEl)) gallery(galleryEl);
             },
             onload: function() {

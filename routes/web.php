@@ -25,11 +25,6 @@ $menus = collect([
         'children' => collect([])
     ],
     (object) [
-        'url' => '/portfolio',
-        'name' => 'Portfolio',
-        'children' => collect([])
-    ],
-    (object) [
         'url' => '/news',
         'name' => 'News',
         'children' => collect([])
@@ -122,37 +117,37 @@ Route::get('/', function () use ($menus) {
 Route::get('/news', function () use ($menus) {
     $posts = collect([
         (object) [
-            'image_src' => 'https://via.placeholder.com/600x350',
+            'image_src' => 'images/static/temp/products/p-01.jpg',
             'image_title' => 'Post title 01',
             'name' => 'Post title 01',
             'ceo_description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
         (object) [
-            'image_src' => 'https://via.placeholder.com/600x350',
+            'image_src' => 'images/static/temp/products/p-02.jpg',
             'image_title' => 'Post title 02',
             'name' => 'Post title 02',
             'ceo_description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
         (object) [
-            'image_src' => 'https://via.placeholder.com/600x350',
+            'image_src' => 'images/static/temp/products/p-03.jpg',
             'image_title' => 'Post title 03',
             'name' => 'Post title 03',
             'ceo_description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
         (object) [
-            'image_src' => 'https://via.placeholder.com/600x350',
+            'image_src' => 'images/static/temp/products/p-04.jpg',
             'image_title' => 'Post title 04',
             'name' => 'Post title 04',
             'ceo_description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
         (object) [
-            'image_src' => 'https://via.placeholder.com/600x350',
+            'image_src' => 'images/static/temp/products/p-05.jpg',
             'image_title' => 'Post title 05',
             'name' => 'Post title 05',
             'ceo_description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
         (object) [
-            'image_src' => 'https://via.placeholder.com/600x350',
+            'image_src' => 'images/static/temp/products/p-06.jpg',
             'image_title' => 'Post title 06',
             'name' => 'Post title 06',
             'ceo_description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'

@@ -32,7 +32,8 @@
 
                                 <div class="post-description">
                                     <p>{{ $post->ceo_description }}</p>
-                                    <a class="readmore" href="/news/detail">Read More</a>
+                                    {{-- <a class="readmore" href="/news/detail">Read More</a> --}}
+                                    <a class="btn btn-theme mt-3" href="/news/detail">Read More</a>
                                 </div>
                             </div>
                         </div>
