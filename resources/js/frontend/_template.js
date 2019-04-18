@@ -198,6 +198,15 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                 if (elExists(generalSliderEl)) generalSlider(generalSliderEl);
                 if (elExists(swiperGalleryEl)) swiperGallery(swiperGalleryEl);
                 if (elExists(galleryEl)) gallery(galleryEl);
+
+                if (elExists('#contact-box')) {
+                    var toggleBox = $('#contact-box').find('.contact-box__button');
+                    toggleBox.on('click', function(e) {
+                        e.preventDefault();
+
+                        $(this).parent().toggleClass("open");
+                    });
+                }
             },
             onload: function() {
                 startTime();
