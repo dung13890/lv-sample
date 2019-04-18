@@ -303,6 +303,12 @@
     }
 }
 
+.testimonials-slider {
+    .swiper-container {
+        padding-bottom: 50px;
+    }
+}
+
 .testimonial-item {
     .testimonial-image {
         text-align: center;
@@ -315,6 +321,9 @@
     }
 
     .testimonial-content {
+        max-width: 600px;
+        margin: auto;
+
         p {
             &:first-child {
                 margin-top: 0;

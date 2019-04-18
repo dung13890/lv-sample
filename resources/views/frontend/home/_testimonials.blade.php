@@ -10,12 +10,14 @@
                         @foreach ($testimonials as $testimonial)
                         <div class="testimonial-item swiper-slide slide-item">
                             <div class="row align-items-center">
-                                <div class="col-sm-3 testimonial-image">
+                                <div class="col-sm-12 testimonial-image">
                                     <img src="{{ $testimonial->avatar }}" alt="{{ $testimonial->first_name }}" />
                                 </div>
-                                <div class="col-sm-9 testimonial-content">
-                                    <p>{{ $testimonial->message }}</p>
-                                    <p class="testimonial-name">{{ sprintf('– %s %s, %s', $testimonial->first_name, $testimonial->last_name, $testimonial->company) }}</p>
+                                <div class="col-sm-12 mt-3 text-center">
+                                    <div class="testimonial-content">
+                                        <p>{{ $testimonial->message }}</p>
+                                        <p class="testimonial-name">{{ sprintf('– %s %s, %s', $testimonial->first_name, $testimonial->last_name, $testimonial->company) }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
