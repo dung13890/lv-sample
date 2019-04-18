@@ -46,17 +46,13 @@ $menus = collect([
     ],
 ]);
 
-$general_slides = collect([
+$generalSlides = collect([
     (object) [
-        'image_src' => '/images/static/temp/slides/slide-01.jpg',
-        'description' => 'Slide 01'
-    ],
-    (object) [
-        'image_src' => '/images/static/temp/slides/slide-02.jpg',
+        'image_src' => '/images/static/temp/slides/slide-2.jpg',
         'description' => 'Slide 02'
     ],
     (object) [
-        'image_src' => '/images/static/temp/slides/slide-03.jpg',
+        'image_src' => '/images/static/temp/slides/slide-3.jpg',
         'description' => 'Slide 03'
     ],
 ]);
@@ -64,16 +60,12 @@ $general_slides = collect([
 Route::get('/', function () use ($menus) {
     $slides = collect([
         (object) [
-            'image_src' => '/images/static/temp/slides/slide-03.jpg',
+            'image_src' => '/images/static/temp/slides/slide-3.jpg',
             'description' => 'Slide 01'
         ],
         (object) [
-            'image_src' => '/images/static/temp/slides/slide-02.jpg',
+            'image_src' => '/images/static/temp/slides/slide-2.jpg',
             'description' => 'Slide 02'
-        ],
-        (object) [
-            'image_src' => '/images/static/temp/slides/slide-01.jpg',
-            'description' => 'Slide 03'
         ],
     ]);
 
@@ -201,10 +193,10 @@ Route::get('/portfolio', function () use ($menus) {
     ]);
 });
 
-Route::get('/about-us', function () use ($menus, $general_slides) {
+Route::get('/about-us', function () use ($menus, $generalSlides) {
     return view('frontend.page.about', [
         '__menus' => $menus->all(),
-        'slides' => $general_slides->all(),
+        'slides' => $generalSlides->all(),
     ]);
 });
 
