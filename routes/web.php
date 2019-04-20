@@ -56,11 +56,13 @@ Route::get('/', function () use ($menus) {
     $slides = collect([
         (object) [
             'image_src' => '/images/static/temp/slides/slide-3.jpg',
-            'description' => 'Slide 01'
+            'title' => 'Slide 01',
+            'description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
         (object) [
             'image_src' => '/images/static/temp/slides/slide-2.jpg',
-            'description' => 'Slide 02'
+            'title' => 'Slide 02',
+            'description' => 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
         ],
     ]);
 
