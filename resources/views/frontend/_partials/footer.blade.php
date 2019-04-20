@@ -13,7 +13,7 @@
                     </div>
                     <ul class="social horizontal">
                         <li><a href="#" target="_blank"><i class="ion ion-logo-facebook" aria-label="Facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ion ion-logo-twitter" aria-label="Twitter"></i></a></li>
+                        {{-- <li><a href="#" target="_blank"><i class="ion ion-logo-twitter" aria-label="Twitter"></i></a></li> --}}
                         <li><a href="#" target="_blank"><i class="ion ion-logo-instagram" aria-label="true"></i></a></li>
                         <li class="last"><a href="#" target="_blank"><i class="ion ion-logo-youtube" aria-label="YouTube"></i></a></li>
                     </ul>

@@ -39,12 +39,12 @@
 
         <section class="section-wrapper contact-work-wrapper py-0">
             <div class="row m-0">
-                <div class="contact-work contact-work__left col-md-6 text-right p-0 bg-primary">
+                <div class="contact-work contact-work__left col-md-6 text-right p-0">
                     <div class="crazy-style">
                         <h2><span class="sub-title">Our Team</span> Work 24/7</h2>
                     </div>
                 </div>
-                <div class="contact-work contact-work__right col-md-6 p-0 bg-dark d-flex align-items-end">
+                <div class="contact-work contact-work__right col-md-6 p-0 d-flex align-items-end">
                     <h3 class="text-uppercase">Around the Clock</h3>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     <div class="col-md-8">
                         <h3 class="text-uppercase">Company name</h3>
                         <div class="footer-contact-content">
-                            <p class="color-primary"> Company TNHH (Company Software Technology Co., Ltd.)</p>
+                            <p> Company TNHH (Company Software Technology Co., Ltd.)</p>
                             <ul class="no-list">
                                 <li><strong>Address :</strong>01, CT1 Tower, Our Street, Hanoi, Viet Nam</li>
                                 <li><strong>Phone :</strong>( +84) 123 456789 ／ (+84) 24 068 6868</li>
