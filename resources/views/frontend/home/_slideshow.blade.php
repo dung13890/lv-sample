@@ -9,8 +9,11 @@
                             <div class="img-wrapper">
                                 <img src="{{ $slide->image_src }}" alt="{{ $slide->description }}" />
                             </div>
-                            <div class="slide-item-text container shadow-lg crazy-style-1">
-                                <h1 class="animate_left_to_right">{{ $slide->description }}</h1>
+                            <div class="slide-item-text container crazy-style-1">
+                                <div class="slide-item-text__inner">
+                                    <h1 class="animate_left_to_right">{{ $slide->title }}</h1>
+                                    <p class="animate_left_to_right">{{ $slide->description }}</p>
+                                </div>
                             </div>
                         </div>
                         @endforeach
