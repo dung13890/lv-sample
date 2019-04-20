@@ -378,22 +378,110 @@
 
 // Swiper gallery
 .swiper-gallery {
+    // Follow with of image.
+    max-width: 800px;
+    margin: auto;
+
     .swiper-slide {
         background-size: cover;
         background-position: center;
     }
 
     .gallery-top {
-        height: 80%;
+        height: 600px;
         width: 100%;
+
+        .swiper-slide {
+            position: relative;
+
+            .slide-before {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                max-width: 50%;
+                -webkit-background-size: cover;
+                background-size: cover;
+
+                img {
+                    visibility: hidden;
+                }
+            }
+
+            img {
+                pointer-events: none;
+                display: block;
+                width: 100%;
+            }
+
+            .before-text,
+            .after-text {
+                position: absolute;
+                background: #fff;
+                top: 50%;
+                padding: 0;
+                margin-top: -17px;
+
+                // &:before,
+                // &:before {
+                //     content: '';
+                //     border-width: 20px;
+                //     border-style: solid;
+                //     border-color: transparent #bc2d31 transparent transparent;
+                // }
+            }
+
+            .before-text {
+                left: 0;
+                right: auto;
+            }
+
+            .after-text {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        .swiper-slide-active {
+            .slide-control {
+                position: absolute;
+                height: 100%;
+                left: 50%;
+                width: 1px;
+                background: #fff;
+                z-index: 3;
+
+                &:before,
+                &:after {
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -1.625rem;
+                    font-family: 'Ionicons';
+                    font-size: 1.875rem;
+                    color: #fff;
+                }
+
+                &:before {
+                    content: "\f10a";
+                    left: 0.5rem;
+                }
+
+                &:after {
+                    content: "\f107";
+                    right: 0.5625rem;
+                }
+            }
+        }
     }
 
     .gallery-thumbs {
-        height: 20%;
+        height: 120px;
         box-sizing: border-box;
         padding: 10px 0;
 
         .swiper-slide {
+            width: 20%;
             height: 100%;
             opacity: 0.4;
         }

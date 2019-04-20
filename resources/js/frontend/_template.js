@@ -161,7 +161,7 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                     watchSlidesProgress: true,
                 });
 
-                var galleryTop = new Swiper($galleryMain, {
+                var galleryMain = new Swiper($galleryMain, {
                     spaceBetween: 10,
                     loop:true,
                     loopedSlides: 5, //looped slides should be the same
@@ -172,6 +172,44 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                     thumbs: {
                         swiper: galleryThumbs,
                     },
+                });
+
+                $('.swiper-slide', $galleryMain).each(function() {
+                    var slideWidth = $(this).width();
+                    var slideOffset = $(this).offset().left;
+                    var $slideBefore = $(this).find('.slide-before');
+                    var $slideCtrl = $(this).find('.slide-control');
+
+                    var ctrlConfig = {
+                        eventx : 0,
+                        eventy : 0,
+                        coords : 0,
+                        moving : false
+                    };
+
+                    $slideBefore.css('background-image', 'url(' + $slideBefore.find('img').attr('data-src') + ')');
+
+                    $(this).on('mousemove touchmove', function(e) {
+                        if ( ctrlConfig.moving ) {
+                            if ( ctrlConfig.eventy == ( e.pageY || e.originalEvent.touches[0].pageY ) ) {
+                                e.preventDefault();
+                            }
+
+                            ctrlConfig.eventx = e.pageX || e.originalEvent.touches[0].pageX;
+                            ctrlConfig.eventy = e.pageY || e.originalEvent.touches[0].pageY;
+                            ctrlConfig.coords = (ctrlConfig.eventx - slideOffset) / slideWidth * 100;
+                            $slideCtrl[0].style.left = ctrlConfig.coords + '%';
+                            $slideBefore[0].style.maxWidth = ctrlConfig.coords + '%';
+                        }
+                    }).on('mousemove touchstart', function(e) {
+                        ctrlConfig.moving = true;
+                        slideWidth = $(this).width();
+                        slideOffset = $(this).offset().left;
+                    }).on('mouemove touchend', function() {
+                        ctrlConfig.moving = false;
+                    }).on('dragstart', function(e) {
+                        e.preventDefault();
+                    });
                 });
             });
         }

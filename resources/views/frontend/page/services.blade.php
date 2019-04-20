@@ -12,37 +12,90 @@
         </div>
 
         <section class="section-wrapper our-services-wrapper">
-            <div class="container">
-                <div class="swiper-gallery">
-                    <div class="swiper-container gallery-top">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10/)"></div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-white"></div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                    </div>
-                    <div class="swiper-container gallery-thumbs">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9/)"></div>
-                            <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10/)"></div>
+            <div class="container py-5">
+                <div class="tabs-block">
+                    <ul class="tab-list">
+                        <li class="active"><a href="#">Photo Editing</a></li>
+                        <li><a href="#">Photo Retouching</a></li>
+                        <li><a href="#">Virtual Dusk</a></li>
+                        <li><a href="#">720 Panorama</a></li>
+                        <li><a href="#">Virtual Staging</a></li>
+                        <li><a href="#">Floor Plan</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="swiper-gallery">
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-02.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-01.jpg" data-src="images/static/temp/products/p-01.jpg" alt="">
+                                            <span class="before-text">Before</span>
+                                        </div>
+                                        <span class="after-text">After</span>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-03.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-02.jpg" data-src="images/static/temp/products/p-02.jpg" alt="">
+                                            <span class="before-text">Before</span>
+                                        </div>
+                                        <span class="after-text">After</span>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-04.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-03.jpg" data-src="images/static/temp/products/p-03.jpg" alt="">
+                                            <span class="before-text">Before</span>
+                                        </div>
+                                        <span class="after-text">After</span>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-05.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-04.jpg" data-src="images/static/temp/products/p-04.jpg" alt="">
+                                            <span class="before-text">Before</span>
+                                        </div>
+                                        <span class="after-text">After</span>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-06.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-05.jpg" data-src="images/static/temp/products/p-05.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-07.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-06.jpg" data-src="images/static/temp/products/p-06.jpg" alt="">
+                                            <span class="before-text">Before</span>
+                                        </div>
+                                        <span class="after-text">After</span>
+                                    </div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-01.jpg)">
+                                        <div class="slide-control"></div>
+                                        <div class="slide-before">
+                                            <img src="images/static/temp/products/p-07.jpg" data-src="images/static/temp/products/p-07.jpg" alt="">
+                                            <span class="before-text">Before</span>
+                                        </div>
+                                        <span class="after-text">After</span>
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                            </div>
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-01.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-02.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-03.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-04.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-05.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-06.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-07.jpg)"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
