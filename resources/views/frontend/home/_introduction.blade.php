@@ -2,6 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
+                <img src="images/static/home-about.jpg" alt="">
+            </div>
+            <div class="col-6">
                 <div class="section-title">
                     <h1 class="heading">About brand_name</h1>
                 </div>
@@ -11,9 +14,6 @@
                         <button class="btn btn-theme mt-5">More about us</button>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <img src="images/static/home-about.jpg" alt="">
             </div>
         </div>
     </div>

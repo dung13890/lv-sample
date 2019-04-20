@@ -1,7 +1,8 @@
 /*! Header styles */
 .site-topbar {
     font-size: 12px;
-    background: #2b2c2d;
+    // background: #2b2c2d;
+    background: $color-topbar-bg;
     position: relative;
     z-index: 11;
 
@@ -12,7 +13,7 @@
 
         li {
             font-size: 12px;
-            color: #fff;
+            color: $color-topbar;
             display: inline-block;
             height: 30px;
             line-height: 30px;
@@ -49,6 +50,7 @@
 }
 
 .site-header {
+    position: relative;
     color: $color-header;
     // background-color: rgba($color-header-bg, .7);
     background-color: #fff;
@@ -74,29 +76,29 @@
     }
 }
 
-.homepage {
-    .site-header:not(.sticky) {
-        color: #fff;
-        background-color: transparent;
-        position: fixed;
-        z-index: 9999 !important;
-        box-shadow: none;
+// .homepage {
+//     .site-header:not(.sticky) {
+//         color: #fff;
+//         background-color: transparent;
+//         position: fixed;
+//         z-index: 9999 !important;
+//         box-shadow: none;
 
-        a {
-            color: #fff;
+//         a {
+//             color: #fff;
 
-            &:hover,
-            &:active,
-            &.active {
-                color: $color-primary;
-            }
-        }
+//             &:hover,
+//             &:active,
+//             &.active {
+//                 color: $color-primary;
+//             }
+//         }
 
-        &.is-sticky {
-            box-shadow: 0 0 90px rgba(40, 40, 45, 0.14), 0 20px 90px rgba(40, 40, 45, 0.28);
-        }
-    }
-}
+//         &.is-sticky {
+//             box-shadow: 0 0 90px rgba(40, 40, 45, 0.14), 0 20px 90px rgba(40, 40, 45, 0.28);
+//         }
+//     }
+// }
 
 .site-logo {
     display: flex;
@@ -142,8 +144,8 @@
             > a {
                 width: auto;
                 padding: 28px 8px;
-                font-weight: 400;
-                letter-spacing: 0.2px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
                 text-transform: uppercase;
                 position: relative;
 
