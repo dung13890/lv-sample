@@ -5,7 +5,7 @@
         </div>
 
         <ul class="list-items row mt-5 wow zoomIn">
-            <li class="item col-sm-4">
+            <li class="item col-md-4 col-sm-6">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">
                         <img src="images/static/temp/products/p-01.jpg" alt="Image Enhancement" />
@@ -20,7 +20,7 @@
                 </div>
             </li>
 
-            <li class="item col-sm-4">
+            <li class="item col-md-4 col-sm-6">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">
                         <img src="images/static/temp/products/p-02.jpg" alt="Virtual Furniture" />
@@ -35,7 +35,7 @@
                 </div>
             </li>
 
-            <li class="item col-sm-4">
+            <li class="item col-md-4 col-sm-6">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">
                         <img src="images/static/temp/products/p-03.jpg" alt="Image Enhancement" />
@@ -50,7 +50,7 @@
                 </div>
             </li>
 
-            <li class="item col-sm-4">
+            <li class="item col-md-4 col-sm-6">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">
                         <img src="images/static/temp/products/p-04.jpg" alt="Virtual Furniture" />
@@ -65,7 +65,7 @@
                 </div>
             </li>
 
-            <li class="item col-sm-4">
+            <li class="item col-md-4 col-sm-6">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">
                         <img src="images/static/temp/products/p-05.jpg" alt="Virtual Furniture" />
@@ -80,7 +80,7 @@
                 </div>
             </li>
 
-            <li class="item col-sm-4">
+            <li class="item col-md-4 col-sm-6">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">
                         <img src="images/static/temp/products/p-06.jpg" alt="Virtual Furniture" />

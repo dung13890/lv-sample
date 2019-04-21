@@ -505,11 +505,10 @@
             left: 10px;
             right: auto;
             top: auto;
-            height: 35px;
             bottom: 0;
             padding: 0;
             background: none !important;
-            font-size: 20px;
+            font-size: 30px;
 
             &:focus {
                 outline: 0;
@@ -518,7 +517,7 @@
         }
 
         .swiper-button-prev {
-            left: 30px;
+            left: 40px;
         }
     }
 

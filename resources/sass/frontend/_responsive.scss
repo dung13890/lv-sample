@@ -6,8 +6,12 @@
             }
         }
     }
-    
+
     .crazy-block {
+        padding-left: 8em;
+    }
+
+    .contact-work .crazy-style {
         padding-left: 8em;
     }
 
@@ -25,6 +29,12 @@
                     font-size: 40px;
                 }
             }
+        }
+    }
+
+    .introduction-wrapper {
+        img {
+            margin-top: 30px;
         }
     }
 
@@ -100,6 +110,25 @@
 }
 
 @media (max-width: 768px) {
+    .site-topbar {
+        text-align: center;
+
+        ul {
+            li.time {
+                float: none;
+            }
+        }
+    }
+
+    .contact-work.contact-work__left:before,
+    .contact-work.contact-work__right:before {
+        display: none !important;
+    }
+
+    .contact-info-wrapper .col-md-4 {
+        margin-bottom: 20px;
+    }
+
     .flexslider {
         .slides {
             .slide-item-text {
@@ -115,12 +144,12 @@
             }
         }
     }
-    
+
     .crazy-block {
         padding-left: 1em;
         width: 100%;
     }
-    
+
     .library-gallery .arrow {
         display: none !important;
     }
@@ -134,7 +163,7 @@
             margin: auto;
         }
     }
-    
+
     .contact-work {
         justify-content: center;
 
@@ -147,7 +176,7 @@
     .contact-block.image-bottom .contact-block-image {
         position: static;
     }
-    
+
     .contact-form-block {
         margin-top: 40px;
     }
@@ -171,7 +200,7 @@
 
     .facebook-box-wrapper {
         text-align: center;
-        
+
         .facebook-box {
             display: inline-block;
             margin: auto;
