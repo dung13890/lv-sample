@@ -199,6 +199,15 @@
             color: #fff;
         }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4196078431372549);
+        }
+
         &.shadow-lg {
             color: #fff;
             // background: rgba(201, 181, 114, 0.5);

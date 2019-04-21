@@ -23,6 +23,7 @@ mix.setPublicPath('public')
         'popper.js',
         'lodash',
         'swiper',
+        'wow.js',
         // 'jquery-sticky',
         // 'flexslider',
         'lightgallery'

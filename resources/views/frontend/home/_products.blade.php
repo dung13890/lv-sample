@@ -4,7 +4,7 @@
             <h2 class="heading">Our products</h2>
         </div>
 
-        <ul class="list-items row mt-5">
+        <ul class="list-items row mt-5 wow zoomIn">
             <li class="item col-sm-4">
                 <div class="media row align-items-center">
                     <a class="col-lg-12" href="#">

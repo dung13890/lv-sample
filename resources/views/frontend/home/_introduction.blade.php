@@ -1,10 +1,10 @@
 <section class="section-wrapper introduction-wrapper text-left">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 wow fadeInLeft">
                 <img src="images/static/home-about.jpg" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-6 wow fadeInRight">
                 <div class="section-title">
                     <h1 class="heading">About brand_name</h1>
                 </div>
