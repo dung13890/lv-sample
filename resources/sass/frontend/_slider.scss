@@ -417,28 +417,44 @@
             .before-text,
             .after-text {
                 position: absolute;
-                background: #fff;
+                background: none;
                 top: 50%;
                 padding: 0;
                 margin-top: -17px;
+                color: #fff;
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
 
-                // &:before,
-                // &:before {
-                //     content: '';
-                //     border-width: 20px;
-                //     border-style: solid;
-                //     border-color: transparent #bc2d31 transparent transparent;
-                // }
+                span {
+                    position: absolute;
+                    font-size: 14px;
+                    font-weight: 600;
+                    top: -12px;
+                }
             }
 
             .before-text {
                 left: 0;
                 right: auto;
+                border-left: 60px solid $color-primary;
+
+                span {
+                    left: -55px;
+                    right: auto;
+                }
             }
 
             .after-text {
                 left: auto;
                 right: 0;
+                border-right: 60px solid $color-primary;
+
+                span {
+                    left: auto;
+                    right: -55px;
+                }
             }
         }
 
@@ -463,15 +479,37 @@
                 }
 
                 &:before {
-                    content: "\f10a";
+                    content: "\f27d";
                     left: 0.5rem;
                 }
 
                 &:after {
-                    content: "\f107";
+                    content: "\f287";
                     right: 0.5625rem;
                 }
             }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: $color-primary;
+            left: 10px;
+            right: auto;
+            top: auto;
+            height: 35px;
+            bottom: 0;
+            padding: 0;
+            background: none !important;
+            font-size: 20px;
+
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 30px;
         }
     }
 

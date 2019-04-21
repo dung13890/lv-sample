@@ -30,33 +30,33 @@
                                         <div class="slide-control"></div>
                                         <div class="slide-before">
                                             <img src="images/static/temp/products/p-01.jpg" data-src="images/static/temp/products/p-01.jpg" alt="">
-                                            <span class="before-text">Before</span>
+                                            <span class="before-text"><span>Before</span></span>
                                         </div>
-                                        <span class="after-text">After</span>
+                                        <span class="after-text"><span>After</span></span>
                                     </div>
                                     <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-03.jpg)">
                                         <div class="slide-control"></div>
                                         <div class="slide-before">
                                             <img src="images/static/temp/products/p-02.jpg" data-src="images/static/temp/products/p-02.jpg" alt="">
-                                            <span class="before-text">Before</span>
+                                            <span class="before-text"><span>Before</span></span>
                                         </div>
-                                        <span class="after-text">After</span>
+                                        <span class="after-text"><span>After</span></span>
                                     </div>
                                     <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-04.jpg)">
                                         <div class="slide-control"></div>
                                         <div class="slide-before">
                                             <img src="images/static/temp/products/p-03.jpg" data-src="images/static/temp/products/p-03.jpg" alt="">
-                                            <span class="before-text">Before</span>
+                                            <span class="before-text"><span>Before</span></span>
                                         </div>
-                                        <span class="after-text">After</span>
+                                        <span class="after-text"><span>After</span></span>
                                     </div>
                                     <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-05.jpg)">
                                         <div class="slide-control"></div>
                                         <div class="slide-before">
                                             <img src="images/static/temp/products/p-04.jpg" data-src="images/static/temp/products/p-04.jpg" alt="">
-                                            <span class="before-text">Before</span>
+                                            <span class="before-text"><span>Before</span></span>
                                         </div>
-                                        <span class="after-text">After</span>
+                                        <span class="after-text"><span>After</span></span>
                                     </div>
                                     <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-06.jpg)">
                                         <div class="slide-control"></div>
@@ -68,22 +68,22 @@
                                         <div class="slide-control"></div>
                                         <div class="slide-before">
                                             <img src="images/static/temp/products/p-06.jpg" data-src="images/static/temp/products/p-06.jpg" alt="">
-                                            <span class="before-text">Before</span>
+                                            <span class="before-text"><span>Before</span></span>
                                         </div>
-                                        <span class="after-text">After</span>
+                                        <span class="after-text"><span>After</span></span>
                                     </div>
                                     <div class="swiper-slide" style="background-image:url(images/static/temp/products/p-01.jpg)">
                                         <div class="slide-control"></div>
                                         <div class="slide-before">
                                             <img src="images/static/temp/products/p-07.jpg" data-src="images/static/temp/products/p-07.jpg" alt="">
-                                            <span class="before-text">Before</span>
+                                            <span class="before-text"><span>Before</span></span>
                                         </div>
-                                        <span class="after-text">After</span>
+                                        <span class="after-text"><span>After</span></span>
                                     </div>
                                 </div>
                                 <!-- Add Arrows -->
-                                <div class="swiper-button-next swiper-button-white"></div>
-                                <div class="swiper-button-prev swiper-button-white"></div>
+                                <div class="swiper-button-next swiper-button-white"><i class="ion ion-ios-arrow-dropleft"></i></div>
+                                <div class="swiper-button-prev swiper-button-white"><i class="ion ion-ios-arrow-dropright"></i></div>
                             </div>
                             <div class="swiper-container gallery-thumbs">
                                 <div class="swiper-wrapper">
