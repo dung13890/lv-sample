@@ -1,7 +1,6 @@
 @extends('layouts.frontend')
 
 @section('title', 'Site name')
-@section('class', 'class=homepage')
 
 @section('content')
     <main class="site-main">

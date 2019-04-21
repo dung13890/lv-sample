@@ -8,7 +8,7 @@
     {{ Html::style(mix('css/frontend.css')) }}
     @stack('sufstyles')
 </head>
-<body id="site-body" @yield('class')>
+<body id="site-body" class="offcanvas-init">
     <div class="site-wrapper">
         {{-- <div class="site-overlay"></div> --}}
         @include('frontend._partials.header')
