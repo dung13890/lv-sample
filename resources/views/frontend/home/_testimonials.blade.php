@@ -1,4 +1,4 @@
-<section class="section-wrapper testimonials-wrapper">
+<section class="section-wrapper testimonials-wrapper wow fadeInUp">
     <div class="container">
         <div class="section-title text-center">
             <h2 class="heading">Testimonials</h2>

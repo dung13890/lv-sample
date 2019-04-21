@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import WOW from 'wow.js';
 import 'lightgallery/dist/js/lightgallery-all.min.js';
 
 (function ($) {
@@ -25,6 +26,19 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
         function checkTime(i) {
           if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
           return i;
+        }
+
+        function general() {
+            new WOW().init();
+
+            if (elExists('#contact-box')) {
+                var toggleBox = $('#contact-box').find('.contact-box__button');
+                toggleBox.on('click', function(e) {
+                    e.preventDefault();
+
+                    $(this).parent().toggleClass("open");
+                });
+            }
         }
 
         function offcanvas() {
@@ -93,7 +107,6 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                 var slide = e.find(".swiper-container");
 
                 if ("slider" == e.attr("id")) {
-                    console.log("fsdffsfsdfds");
                     var i = $("#slider").offset().top;
                     if (w_height -= i, e.find(".slider-parallax-inner").length > 0) {
                         var s = e.find(".slider-parallax-inner").css("transform").match(/-?[\d\.]+/g);
@@ -229,6 +242,7 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                 var galleryEl = '#lightgallery';
                 var swiperGalleryEl = '.swiper-gallery';
 
+                general();
                 offcanvas();
                 if (elExists(scrollEl)) scrollTop(scrollEl);
                 // if (elExists(stickyEl)) sticky(stickyEl);
@@ -236,15 +250,6 @@ import 'lightgallery/dist/js/lightgallery-all.min.js';
                 if (elExists(generalSliderEl)) generalSlider(generalSliderEl);
                 if (elExists(swiperGalleryEl)) swiperGallery(swiperGalleryEl);
                 if (elExists(galleryEl)) gallery(galleryEl);
-
-                if (elExists('#contact-box')) {
-                    var toggleBox = $('#contact-box').find('.contact-box__button');
-                    toggleBox.on('click', function(e) {
-                        e.preventDefault();
-
-                        $(this).parent().toggleClass("open");
-                    });
-                }
             },
             onload: function() {
                 startTime();
