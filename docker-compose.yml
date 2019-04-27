@@ -6,7 +6,7 @@ services:
     volumes:
       - ./:/var/www/app
   workspace:
-    image: kevinduy/php
+    image: dung13890/laravel-env
     restart: always
     volumes_from:
       - application
@@ -25,13 +25,25 @@ services:
       MYSQL_USER: homestead
       MYSQL_PASSWORD: secret
       MYSQL_ROOT_PASSWORD: root
-  nginx:
-    image: kevinduy/nginx
+  adminer:
+    image: adminer:latest
+    restart: always
+    ports:
+      - 8000:8080
+  redis:
+      restart: always
+      image: redis:latest
+      expose:
+        - "6379"
+      volumes:
+        - ./.docker/redis:/data
+  caddy:
+    image: abiosoft/caddy
     restart: always
     volumes_from:
       - application
     ports:
       - "80:80"
       - "443:443"
-    tty: true
-    command: /bin/bash -c "/serve.sh workspace laravel.test /var/www/app/public && nginx"
+    command: ["--conf", "/var/www/app/Caddyfile", "--log", "stdout"]
+

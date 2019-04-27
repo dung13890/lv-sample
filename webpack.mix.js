@@ -15,7 +15,10 @@ mix.setPublicPath('public')
     .setResourceRoot('../')
     .copyDirectory('resources/images/static', 'public/images/static')
     .js('resources/js/frontend/app.js', 'js/frontend.js')
+    .js('resources/js/backend.js', 'js')
     .sass('resources/sass/frontend/app.scss', 'css/frontend.css')
+    .sass('resources/sass/backend/app.scss', 'css/backend')
+    .sass('resources/sass/backend/modules/category.scss', 'css/backend')
     .extract([
         /* Extract packages from node_modules to vendor.js */
         'jquery',
