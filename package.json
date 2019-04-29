@@ -22,11 +22,15 @@
         "popper.js": "^1.12",
         "swiper": "^4.5.0",
         "vue": "^2.5.7",
+        "sweetalert2": "^6.11.1",
         "wow.js": "^1.2.2"
     },
     "dependencies": {
         "flexslider": "^2.7.2",
         "jquery-sticky": "^1.0.4",
-        "lightgallery": "^1.6.12"
+        "lightgallery": "^1.6.12",
+        "datatables.net-bs": "^1.10.19",
+        "dropzone": "^5.5.1",
+        "lang.js": "^1.1.13"
     }
 }
